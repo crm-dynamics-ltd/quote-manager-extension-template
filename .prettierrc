@@ -1,0 +1,9 @@
+{
+	"arrowParens": "avoid",
+	"singleQuote": true,
+	"printWidth": 160,
+	"useTabs": true,
+	"plugins": ["@ianvs/prettier-plugin-sort-imports"],
+	"importOrder": ["<THIRD_PARTY_MODULES>", "", "<BUILTIN_MODULES>", "", "<TYPES>", "", "^@.+", "", "^~.+", "", "^[.]"],
+	"importOrderParserPlugins": ["typescript", "decorators"]
+}
