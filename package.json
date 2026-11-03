@@ -1,0 +1,17 @@
+{
+  "name": "@crmd-quote-manager-extensions/template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.7.1",
+		"vite": "^8.3.5",
+		"typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "@crmd-quote-manager/extensions-sdk": "~0.0.0"
+  }
+}
