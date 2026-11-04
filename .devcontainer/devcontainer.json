@@ -1,0 +1,24 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/dotnet:2-10.0-noble",
+	"features": {
+		"ghcr.io/devcontainers/features/node": { "version": "lts" }
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": ["esbenp.prettier-vscode", "runem.lit-plugin", "vitest.explorer"],
+			"settings": {
+				"editor.defaultFormatter": "esbenp.prettier-vscode",
+				"js/ts.referencesCodeLens.enabled": true
+			}
+		}
+	},
+	"containerEnv": {
+		"ARTIFACTS_ACCESSTOKEN": "${localEnv:ARTIFACTS_ACCESSTOKEN}",
+		"ARTIFACTS_CREDENTIALPROVIDER_ACCESSTOKEN": "${localEnv:ARTIFACTS_ACCESSTOKEN}"
+	},
+	"mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,readonly,type=bind",
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.gitconfig,target=/home/vscode/.gitconfig,readonly,type=bind",
+		"source=npm-cache,target=/home/vscode/.npm,type=volume"
+	]
+}
