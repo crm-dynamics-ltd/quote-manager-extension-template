@@ -5,7 +5,7 @@
 	},
 	"customizations": {
 		"vscode": {
-			"extensions": ["esbenp.prettier-vscode", "runem.lit-plugin", "vitest.explorer"],
+			"extensions": ["esbenp.prettier-vscode"],
 			"settings": {
 				"editor.defaultFormatter": "esbenp.prettier-vscode",
 				"js/ts.referencesCodeLens.enabled": true
